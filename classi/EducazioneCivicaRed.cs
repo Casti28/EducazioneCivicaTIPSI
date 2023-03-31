@@ -5,10 +5,10 @@ using EducazioneCivica;
 public class EducazioneCivicaTests
 {
     [Fact]
-    public void Esercizio1Test() 
+    public void Esercizio2Test() 
     { 
         var test = new EducazioneCivica(); 
-        string result = test.Esercizio1("ciao", 10);
+        string result = test.Esercizio2("msky", 10);
 
         Assert.Equal(result, "abcd");
     }
