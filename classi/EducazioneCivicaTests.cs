@@ -76,5 +76,23 @@ public class EducazioneCivicaTests
         Assert.Equal(result, 100);
     }
 
+    [Fact]
+    public void Esercizio5GreenTest() 
+    {
+        var test = new EducazioneCivica(); 
+        double result = test.Esercizio5("ciao", 10);
+
+        Assert.Equal(result, 280);
+    }
+
+    [Fact]
+    public void Esercizio5RedTest() 
+    {
+        var test = new EducazioneCivica(); 
+        double result = test.Esercizio5("ciao", 9);
+
+        Assert.Equal(result, 2000);
+    }
+
 
 }

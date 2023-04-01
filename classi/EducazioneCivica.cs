@@ -85,4 +85,16 @@ public class EducazioneCivica
         result = prodotto / n;
         return Math.Ceiling(result);
     }
+
+    public static double Esercizio5(string s, int n)
+    {
+        if (n % 2 == 0)
+        {
+            return Convert.ToDouble(Esercizio3(s, n));
+        }
+        else
+        {
+            return Esercizio4(s, n);
+        }     
+    }
 }
