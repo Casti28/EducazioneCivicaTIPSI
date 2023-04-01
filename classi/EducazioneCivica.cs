@@ -4,6 +4,7 @@ using System.Reflection;
 public class EducazioneCivica
 {
     private static string alfabeto = "abcdefghijklmnopqrstuvwxyz";
+    public static int c = 0;
     public static string Esercizio1(string s, int n)
     {
         s = s.ToLower();
@@ -95,6 +96,9 @@ public class EducazioneCivica
         else
         {
             return Esercizio4(s, n);
-        }     
+        }
+        c++;
     }
+
+
 }

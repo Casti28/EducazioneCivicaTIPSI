@@ -93,6 +93,4 @@ public class EducazioneCivicaTests
 
         Assert.Equal(result, 2000);
     }
-
-
 }
