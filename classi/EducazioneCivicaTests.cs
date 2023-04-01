@@ -32,11 +32,31 @@ public class EducazioneCivicaTests
     }
 
     [Fact]
-    public void Esercizio1RedTest() 
+    public void Esercizio2RedTest() 
     {
         var test = new EducazioneCivica(); 
         string result = test.Esercizio2("msky", 10);
 
         Assert.Equal(result, "abcd");
     }
+
+    [Fact]
+    public void Esercizio3GreenTest() 
+    {
+        var test = new EducazioneCivica(); 
+        int result = test.Esercizio3("ciao", 10);
+
+        Assert.Equal(result, 280);
+    }
+
+    [Fact]
+    public void Esercizio3RedTest() 
+    {
+        var test = new EducazioneCivica(); 
+        int result = test.Esercizio3("ciao", 10);
+
+        Assert.Equal(result, 200);
+    }
+
+
 }

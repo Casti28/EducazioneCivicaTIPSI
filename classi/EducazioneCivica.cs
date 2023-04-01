@@ -47,4 +47,23 @@ public class EducazioneCivica
         }
         return result;
     }
+
+    public static int Esercizio3(string s, int n)
+    {
+        s = s.ToLower();
+        int result = 0;
+        int somma = 0;
+        for (int i = 0; i < s.Length; i++)
+        {
+            for (int j = 0; j < alfabeto.Length; j++)
+            {
+                if (s[i] == alfabeto[j])
+                {
+                    somma += j + 1;
+                }
+            }
+        }
+        result = somma * n;
+        return result;
+    }
 }
