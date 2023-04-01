@@ -100,5 +100,8 @@ public class EducazioneCivica
         c++;
     }
 
-
+    public static double Esercizio7(string s)
+    {
+        return Esercizio5(s, c);
+    }
 }
