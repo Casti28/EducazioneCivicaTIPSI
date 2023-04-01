@@ -25,4 +25,26 @@ public class EducazioneCivica
         }
         return result;
     }
+
+    public static string Esercizio2(string s, int n)
+    {
+        s = s.ToLower();
+        string result = "";
+        for (int i = 0; i < s.Length; i++)
+        {
+            for (int j = 0; j < alfabeto.Length; j++)
+            {
+                if (s[i] == alfabeto[j])
+                {
+                    int index = j - n;
+                    if (index < 0)
+                    {
+                        index += 26;
+                    }
+                    result += alfabeto[index];
+                }
+            }
+        }
+        return result;
+    }
 }

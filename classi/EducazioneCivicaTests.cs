@@ -21,4 +21,22 @@ public class EducazioneCivicaTests
 
         Assert.Equal(result, "abcd");
     }
+
+    [Fact]
+    public void Esercizio2GreenTest() 
+    { 
+        var test = new EducazioneCivica(); 
+        string result = test.Esercizio2("msky", 10);
+
+        Assert.Equal(result, "ciao");
+    }
+
+    [Fact]
+    public void Esercizio1RedTest() 
+    {
+        var test = new EducazioneCivica(); 
+        string result = test.Esercizio2("msky", 10);
+
+        Assert.Equal(result, "abcd");
+    }
 }
